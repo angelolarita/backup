@@ -1,0 +1,73 @@
+   body {
+       /* background-image: url('assets/img/1.jpg'); */
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+       margin: 0;
+   }
+
+   .login-container {
+       background: rgba(255, 255, 255, 0.9);
+       padding: 30px;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       width: 100%;
+       max-width: 400px;
+   }
+
+
+
+   .icons_edit {
+       width: 30px;
+       transition: transform 0.3s ease-in-out;
+   }
+
+   .icons_delete {
+       width: 26px;
+       transition: transform 0.3s ease-in-out;
+   }
+
+   .icons_edit:hover,
+   .icons_edit:active {
+       transform: scale(1.2);
+       /* Expands the icon on hover and click */
+   }
+
+   .icons_delete:hover,
+   .icons_delete:active {
+       transform: scale(1.2);
+       /* Expands the icon on hover and click */
+   }
+
+   .card {
+       margin: 70px auto;
+       max-width: 90%;
+
+   }
+
+   @media (min-width: 992px) {
+
+       /* For larger screens */
+       .card {
+           margin-left: 300px;
+           width: calc(100% - 300px);
+           /* Adjust width considering the sidebar */
+       }
+   }
+
+   @media (max-width: 991px) {
+
+       /* For smaller screens */
+       .card {
+           margin-left: auto;
+           margin-right: auto;
+           width: 100%;
+           /* Take full width */
+       }
+   }
+
+  
